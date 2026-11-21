@@ -1,0 +1,62 @@
+/* ── CINEMATIC PRELOADER WITH RED-ORANGE ACCENTS ── */
+.preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: #050507;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloader-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+  width: 320px;
+}
+
+.preloader-name {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-family: var(--font-cinematic);
+  font-size: clamp(3rem, 9vw, 4.8rem);
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.preloader-name-white {
+  color: #FFFFFF;
+}
+
+.preloader-name-glow {
+  color: var(--accent-orange);
+  text-shadow:
+    0 0 20px rgba(255, 59, 20, 0.9),
+    0 0 60px rgba(255, 102, 0, 0.5);
+}
+
+.preloader-bar-wrap {
+  width: 100%;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.preloader-bar {
+  height: 100%;
+  background: var(--accent-gradient);
+  transform-origin: left;
+  box-shadow: 0 0 14px rgba(255, 59, 20, 0.8);
+}
+
+.preloader-count {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+  letter-spacing: 0.12em;
+}

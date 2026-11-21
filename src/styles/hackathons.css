@@ -1,0 +1,239 @@
+/* ── HACKATHONS SECTION WITH GOTHAM RED-ORANGE AESTHETICS ── */
+.hackathons-section {
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border-fire);
+}
+
+.hackathons-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 3.5rem;
+}
+
+.hack-card-fire {
+  background: rgba(10, 10, 14, 0.85);
+  border: 1px solid var(--border-fire);
+  border-radius: var(--radius-md);
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: relative;
+  overflow: hidden;
+  backdrop-filter: blur(12px);
+  transition: transform var(--duration-fast) var(--ease-out), border-color var(--duration-fast) var(--ease-out), box-shadow var(--duration-fast) var(--ease-out);
+}
+
+.hack-card-fire::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent-gradient);
+  opacity: 0;
+  transition: opacity var(--duration-fast) ease;
+}
+
+.hack-card-fire:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-fire-hover);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.9), 0 0 35px rgba(255, 59, 20, 0.22);
+}
+
+.hack-card-fire:hover::before {
+  opacity: 1;
+}
+
+.hack-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.hack-index-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+  letter-spacing: 0.1em;
+}
+
+.hack-standing-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: #FFA500;
+  background: rgba(255, 165, 0, 0.08);
+  border: 1px solid rgba(255, 165, 0, 0.25);
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+.trophy-icon {
+  color: #FFA500;
+}
+
+.hack-name-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.hack-event-title {
+  font-family: var(--font-cinematic);
+  font-size: 1.8rem;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.hack-timeline-date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.hack-separator-line {
+  height: 1px;
+  background: var(--border-fire);
+  margin: 0.3rem 0;
+}
+
+.hack-built-solution {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.built-lead {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-muted);
+}
+
+.built-title {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 800;
+  color: #FFFFFF;
+}
+
+.hack-story-text {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.65;
+}
+
+.hack-tag-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: auto;
+}
+
+.hack-chip {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  border: 1px solid var(--border-subtle);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-sm);
+  transition: all var(--duration-fast) ease;
+}
+
+.hack-card-fire:hover .hack-chip {
+  color: #E2E2EA;
+  border-color: var(--border-fire);
+}
+
+/* Certifications Bar */
+.certifications-strip {
+  margin-top: 3.5rem;
+  background: rgba(10, 10, 14, 0.7);
+  border: 1px solid var(--border-fire);
+  border-radius: var(--radius-md);
+  padding: 1.6rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.cert-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: 0.08em;
+}
+
+.cert-shield-icon {
+  color: var(--accent-fire);
+}
+
+.cert-items-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+
+.cert-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  background: rgba(255, 75, 20, 0.06);
+  border: 1px solid var(--border-fire);
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-full);
+  color: #FFFFFF;
+  transition: all var(--duration-fast) ease;
+}
+
+.cert-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cert-link:hover {
+  border-color: #FFA500;
+  background: rgba(255, 75, 20, 0.16);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 18px rgba(255, 59, 20, 0.35);
+  color: #FFAA33;
+}
+
+.cert-award-icon {
+  color: var(--accent-orange);
+}
+
+.cert-ext-icon {
+  color: var(--accent-orange);
+  margin-left: 2px;
+}
+
+.cert-org {
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .hackathons-grid {
+    grid-template-columns: 1fr;
+  }
+}

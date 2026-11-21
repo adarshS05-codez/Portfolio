@@ -1,0 +1,84 @@
+/* ── FOOTER WITH GOTHAM RED-ORANGE AESTHETICS ── */
+.footer {
+  border-top: 1px solid var(--border-fire);
+  padding: 1.8rem 0;
+  background: #040406;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footer-logo {
+  font-family: var(--font-cinematic);
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+}
+
+.footer-copy {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-muted);
+}
+
+.footer-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-time {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: #FF9944;
+  letter-spacing: 0.06em;
+}
+
+.clock-pulse {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-fire);
+  box-shadow: 0 0 8px var(--accent-fire);
+}
+
+.footer-top {
+  font-family: var(--font-heading);
+  font-size: 0.74rem;
+  font-weight: 700;
+  color: var(--accent-orange);
+  background: rgba(255, 75, 20, 0.08);
+  border: 1px solid var(--border-fire);
+  padding: 0.4rem 0.95rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--duration-fast) ease;
+  letter-spacing: 0.06em;
+}
+
+.footer-top:hover {
+  background: var(--accent-fire);
+  color: #FFFFFF;
+  box-shadow: 0 0 16px rgba(255, 59, 20, 0.6);
+}
+
+@media (max-width: 600px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
